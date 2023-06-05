@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>GAME FINDER</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+
+<body>
+
+<div class="Logoarriba">
+    <img id="logo" src="Media\Joystick.png" alt="logo del sitio">  
+ <h4>GAME</h4>
+ <h5>Archive </h5>
+
+</div>
+
+
+<div class="login-container">
+    <h2 style="color: white;" > Welcome! Log in or register </h2>
+    <h3 style="color: white;">  Log in to find the games you’re looking for! </h3>
+    <input type="text" id="username" placeholder="Usuario" id="email-input">
+    <span id="email-error" class="error-message">Email inválido</span>
+    <input type="password" id="password" placeholder="Contrasena" id="password-input">
+    <span id="password-error" class="error-message">Contraseña inválida</span>
+    <button id="login" onclick="login()"> Log In </button>
+
+    <div class="password-container">
+        <span class="toggle-password" onclick="PasswordVisibility()">
+          <i id="eyeIcon" class="fa fa-eye"></i>
+        </span>
+    </div>
+    
+    <button id="recordar" class="recordar-contrasena"></button>
+    <a > Remember me </a>    <b href=""> Forgot pasword? </b>
+    <h7>Not registred yet? </h7> <h8 href="">  Register now </h8>
+    
+
+    <div class="social-buttons">
+    <button onclick="loginWithFacebook()"><i class="fab fa-facebook"></i> Login with Facebook</button>
+    <button onclick="loginWithGoogle()"><i class="fab fa-google"></i> Login with Google</button>
+    <button onclick="loginWithTwitter()"><i class="fab fa-twitter"></i> Login with Twitter</button>
+    </div>
+
+</div>
+</body>
+
+
+
+<script>
+
+    function PasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      var eyeIcon = document.getElementById("eyeIcon");
+    
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password"; 
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    }
+
+    function loginWithFacebook() {
+    }
+    
+    function loginWithGoogle() {
+    }
+    
+    function loginWithTwitter() {
+    }
+
+ 
+    var emailInput = document.getElementById("email-input");
+    var passwordInput = document.getElementById("password-input");
+    var emailError = document.getElementById("email-error");
+    var passwordError = document.getElementById("password-error");
+
+function validateEmail() {
+  if (emailInput.value === "") {
+    emailError.style.display = "block";
+  } else {
+    emailError.style.display = "none";
+  }
+}
+
+function validatePassword() {
+  if (passwordInput.value === "") {
+    passwordError.style.display = "block";
+  } else {
+    passwordError.style.display = "none";
+  }
+}
+
+    emailInput.addEventListener("blur", validateEmail);
+    passwordInput.addEventListener("blur", validatePassword);
+    
+
+
+    </script>
+
+
+
+
+
+
+</html>

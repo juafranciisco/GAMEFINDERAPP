@@ -1,0 +1,206 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(BG@3x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute ;
+    left: 0px;
+    top: 0px;
+}
+
+
+.Logoarriba {
+position: fixed;
+top: 0;
+left: 0;
+
+}
+
+ h4 {
+position: fixed;
+left: 5%;
+top: -4%;
+bottom: 29.44%;
+font-family: 'Archivo';
+font-style: normal;
+font-weight: 100;
+font-size: 25px;
+
+
+color: #EFC0FF;
+ }
+
+ h5 {
+    position: fixed;
+    left: 5%;
+    top: -75%;
+    bottom: 10.08%;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 6px;
+    color: #E6EFF8;
+    
+
+ }
+    
+
+.login-container {
+text-align: center;
+align-items: center;
+position: absolute;
+width: 462px;
+height: 702px;
+left: 700px;
+top: 78px;
+background: rgba(23, 23, 23, 0.8);
+backdrop-filter: blur(5px);
+border-radius: 12px;
+bottom: 144px;
+padding: 5px;
+
+
+
+
+  }
+  
+  input {
+    display: block;
+    padding: 8px;
+    margin: 15px ;
+    width: 90%;
+    border-radius: 6px;
+  }
+  
+  button {
+    position: relative;
+    top: 10%;
+    background-color:#BF5FE1;
+    color: white;
+    padding: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+
+  button:hover {
+    background-color: #fc0ef8;
+  }
+
+  b{ 
+    position: relative;
+    top: -35px;
+    color: #BF5FE1;
+    padding: 40px;
+  } 
+
+  a{ 
+    position: relative;
+    top: -35px;
+    color: white;
+    padding: 60px;
+  }
+
+  .recordar-contrasena {
+    display: block;
+    left: 20px;
+    top: -30px;
+    width: 5%;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+ 
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  
+  #eyeIcon {
+    color: #999;
+    position: absolute;
+    top: -100px ;
+    right: 13px;
+
+  }
+
+  .social-buttons {
+    margin-top: 200px;
+    
+
+  }
+
+  .social-buttons button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin: 10px;
+  }
+  
+
+  .social-buttons button i {
+    margin-right: 10px;
+    
+  }
+
+ h7 {
+    position: relative;
+    top: 50px;
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    
+ }
+
+ h8 
+ {  
+    position: relative;
+    top: 50px;
+  
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BF5FE1;
+ }
+ 
+ .error-message {
+    display: block;
+    color: red;
+    font-size: 12px;
+   
+  }
