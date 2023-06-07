@@ -1,4 +1,4 @@
-script>
+
 
     function PasswordVisibility() {
       var passwordInput = document.getElementById("password");
@@ -51,4 +51,3 @@ function validatePassword() {
     
 
 
-    </script>
