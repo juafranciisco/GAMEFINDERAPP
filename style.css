@@ -1,164 +1,298 @@
+
+
 body {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
     background-image: url(BG@3x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: absolute ;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
     
-}
+  }
+
+  body.dark-theme {
+    background-image: url(/assets/unsplash_jCorhBYp_C4@3x.png);
+  }
+
+  .toggle-container {
+    position: relative;
+    align-items: center;
+    gap: 8px;
+    
+  }
+
+  .toggle-button {
+    position: relative;
+    left: 85%;
+    top: 85px;
+    width: 50px;
+    height: 24px;
+    border-radius: 42px;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding: 0px;
+    outline: none;
+
+  }
+
+  .toggle-button::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+
+  .toggle-button.active {
+    background-color: #2196f3;
+  }
+
+  .toggle-button.active::after {
+    transform: translateX(26px);
+    
+  }
+
+  .toggle-text {
+    font-family: "Exo";
+    position: relative;
+    top:90px;
+    left: 85%;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .login-container.dark-theme {
+    background-color: #F0F0F0; 
+    /* Otros estilos para el contenedor de inicio de sesión en modo oscuro */
+  }
+
+  .login-container.dark-theme h2,
+  .login-container.dark-theme h3,
+  .login-container.dark-theme .link1,
+  .login-container.dark-theme h7 {
+    color: #515151;
+    /* Otros estilos para los elementos en modo oscuro */
+  }
+ 
+
+ 
 
 
-.Logoarriba {
-position: fixed;
-top: 0;
-left: 0;
 
-}
 
- h4 {
-position: fixed;
-left: 5%;
-top: -4%;
-bottom: 29.44%;
-font-family: 'Archivo';
-font-style: normal;
-font-weight: 100;
-font-size: 25px;
-color: #EFC0FF;
+  .alllogo{
+    position: absolute;
+    padding: 60px;
+    width: 200px;
+    Height: 62px;
+    
+    
+  }
 
- }
+  .uplogo {
+    position: absolute;
+    padding: 5px;
+    top: 0px;
+    left: 40px
+  }
 
- h5 {
-    position: fixed;
-    left: 5%;
-    top: -75%;
-    bottom: 10.08%;
+  
+  .game {
+    position: absolute;
+    align-items: center;
+    left: 35%;
+    top: 7.66%;
+    bottom: 29.44%;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 37px;
+    color: #EFC0FF;
+  }
+  .finder {
+      position: absolute;
+      left: 35.5%;
+      align-items: center;
+      top: 25.27%;
+      bottom: 10.08%;
+    
+  }
+
+ 
+ 
+  .wrapper{
+  display: flex;
+  margin-right: 101px;
+  margin-top: 178px;
+  margin-bottom: 144px;
+  justify-content: center;
+  justify-items: center;
+
+
+
+  }
+
+  .login-container {
+   
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: rgba(23, 23, 23, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 30px;
+  width: 462px;
+  height: 702px;
+  backdrop-filter: blur(5px);
+  left: 878px;
+  right: 100px
+
+
+
+  }
+
+  .login-container h2 {
+    font-family: "Archivo";
+    color: white;
+  }
+
+  .login-container h3 {
+    font-family: "Archivo";
+    color: white;
+  }
+
+
+
+  
+
+  
+  input {
+    
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 12px;
+    margin: 10px ;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 4px;
+    Width: 400px;
+    height:  30px;
+    border-color: #BF5FE1;
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 15px;
-    display: flex;
     align-items: center;
-    letter-spacing: 6px;
-    color: #E6EFF8;
-    
-
- }
-    
-
-.login-container {
-text-align: center;
-align-items: center;
-background: rgba(23, 23, 23, 0.8);
-backdrop-filter: blur(5px);
-border-radius: 12px;
-bottom: 144px;
-padding: 5px;
-position: absolute;
-width: 462px;
-height: 900px;
-left: 878px;
-top: 178px;
-background: rgba(23, 23, 23, 0.8);
-backdrop-filter: blur(5px);
-/* Note: backdrop-filter has minimal browser support */
-
-border-radius: 12px;
-
-
-
+    outline: none;
 
   }
-  
-  input {
-    align-items: center;
-    display: block;
-    padding: 12px;
-    margin: 15px ;
-    border-radius: 4px;
-    Width: 400px;
-    height:  47px;
-    
-    
-    
-  }
-  
+
+
+
+
+
+
   button {
     position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
     top: 10%;
     background-color:#BF5FE1;
     color: white;
     padding: 20px;
-    margin: ;
     width: 90%;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     z-index: 999;
+    border-radius: 6px;
   }
   
 
-  button:hover {
-    background-color: #fc0ef8;
-  }
+
 
   b{ 
     position: absolute;
+    margin: 30px;
     height: 19px;
-    left: 70.25%;
+    left: 60.25%;
     top: 35%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-/* identical to box height */
     display: flex;
     align-items: center;
     text-align: right;
-/* Light Violet */
     color: #BF5FE1;
 
   } 
 
-  a{ 
+  .link1{ 
+    
     position: absolute;
-    height: 19px;
-    left: 15.94%;
-    right: 50.07%;
+    margin: 30px;
     top: 35%;
+    left: 15%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Exo';
+  }
+
+  .link2 {  
+    position: absolute;
+    padding: 15px;
+    
+    right: 30%;
+    top: 410px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-  }
+    text-align: right;
+    color: #BF5FE1;
+ }
 
   .recordar-contrasena {
     display: block;
     left: 20px;
-    top: -30px;
     width: 5%;
-    margin-bottom: 10px;
-    background-color: #ccc;
-    color: #fff;
-    border: none;
+    top: -35px;
+    color: black;
+    
+    border-color: black;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
+    z-index: 999;
   }
   
 
  
   .password-container {
-    position: relative;
+    position: flex;
   }
   
   .toggle-password {
@@ -173,90 +307,369 @@ border-radius: 12px;
   #eyeIcon {
     color: #BF5FE1;
     position: absolute;
-    top: -105px ;
-    right: 20px;
+    top: -150px ;
+    right: 50px;
 
   }
 
-  .social-buttons {
-    margin-top: 200px;
-    
 
+  h1 {
+    font-family: 'Archivo';
   }
 
-  .social-buttons button {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin: 10px;
-  }
-  
-
-  .social-buttons button i {
-    margin-right: 10px;
-    
+  h2{
+    font-family: 'Archivo';
   }
 
- h7 {
+  h7 {
     position: absolute;
     height: 19px;
-    left:  30.28%;
-    top: calc(50% - 19px/2 + 56.5px);
+    left:  28.30%;
+    top: 410px;
+    padding: 15px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     /* identical to box height */
-    
     text-align: right;
-    
     color: #FFFFFF;
-
-    
  }
 
- h8 
- {  
+ 
+
+   .link2 {  
     position: absolute;
-    height: 19px;
-    left: 30.6%;
-    right: 30.28%;
-    top: calc(50% - 19px/2 + 56.5px);
+    padding: 15px;
     
+    right: 30%;
+    top: 410px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    /* identical to box height */
-    
     text-align: right;
-    
-    /* Light Violet */
-    
     color: #BF5FE1;
  }
  
  .error-message {
     display: none;
+    text-align: left;
     color: red;
-    font-size: 12px;
+    font-size: 10px;
+    
    
   }
+ 
 
-  .borde 
-  { display: flex;
-    flex-direction:row;
-    position: absolute;
-    left: 10.42%;
-    right: 60.32%;
+ .b1
+  { position: absolute;
+    left: 55.32%;
+    right:  70px;
     top: 59.8%;
     bottom: 40%;
     border: 1px solid #FFFFFF;
+  }
+  .b2 {
+    position: absolute;
+    left:  70px;
+    right: 55.32%;;
+    top: 59.8%;
+    bottom: 40%;
+    border: 1px solid #FFFFFF;
+  }
+
+  a1 { 
+    position: absolute;
+    left: 20.68%;
+    right: 20.66%;
+    top: 58.79%;
+    bottom: 39.29%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF; 
 
   }
+
+
+  .social-buttons {
+    margin-top: 100px;
+  
+
+  }
+
+  .social-buttons button {
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 10px ;
+    margin: 5px;
+    border-width: 2px;
+    border-color: #E6EFF8;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    align-items: center;
+   
+  }
+  
+
+  .social-buttons button i {
+    position: flex;
+    display: flex;
+    
+    
+
+  
+  }
+
+  
+ 
+
+
+
+
+  @media (max-width: 320px)   {
+
+
+    .alllogo{
+      z-index: 9999;
+      position:flex;
+      justify-content: center;
+      align-items: center;
+      left: -15px;
+      padding: 0px;
+
+    }
+    .uplogo{
+      left: 100px;
+    }
+
+    .Logoarriba {
+      
+      top: 20px;
+      transform: translateX(-50%);
+      
+    }
+
+
+    .game {
+    left: 80%;
+    position: absolute;
+    top: 10%;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38.1041px;
+    line-height: 41px;
+    z-index: 9999;
+    color: #EFC0FF;
+    }
+    
+    .finder {
+        left: 80%;
+        top: 50px;
+        position: absolute;
+        z-index: 9999;
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.6899px;
+        line-height: 17px;
+        align-items: center;
+        letter-spacing: 6.72425px;
+        color: #E6EFF8;
+    }
+    
+    .login-container {
+        
+        
+        width: 320px;
+        height: 767px;
+        left: 0px;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+        
+        /* Note: backdrop-filter has minimal browser support */
+    }
+
+    
+    
+    input {
+      display: flex;
+      width: 85%;
+      justify-items: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    button {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      top: 8%;
+    }
+    
+    b {
+        left: 53%;
+        top: 37.85%;
+
+    
+    }
+    
+    a {
+      
+      top: 38%;
+      left: 13%;
+    
+    }
+    
+    h7 {
+      padding: 4px;
+      top:55% ;
+      left: 20%;
+      height: 50px;
+      color: white;
+    }
+    
+    h8 {
+        padding: 3px;
+        left: 45%;
+        top: 55%;
+        width: 100px;
+        
+    }
+    
+    .b1 {
+        position: absolute;
+        left: 58.34%;
+        right: 5%;
+        
+        
+        border: 1px solid #FFFFFF;
+      
+
+    }
+
+    .link2{
+      top: 53.55%;
+      right: 90px;
+    }
+    .link1 {
+     top: 38%;
+    }
+    
+    .b2 {
+      
+        position: absolute;
+        left: 5%;
+        right: 58.34%;
+
+        border: 1px solid #FFFFFF;
+      
+    }
+    
+    a1 {
+        position: absolute;
+        left: 41.66%;
+        right: 41.66%;
+        bottom: 32.76%;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        
+
+    }
+
+    .wrapper {
+      
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      
+    }
+
+    
+
+    .social-buttons {
+      
+      display: flex;
+      flex-direction: column;
+      margin-top: 110px;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+
+    .toggle-password {
+      right: 5px;
+      top: 51%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      pointer-events: auto;
+    }
+
+    h2 {
+      z-index: 9999;
+      height: 10px;
+      left: 5.62%;
+      right: 5.31%;
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      /* identical to box height */
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    h3{ 
+      z-index: 9999;
+      font-family: "Archivo";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .titulos{
+      font-family: "Archivo";
+      padding: 25px;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+    
+
+
+  }
+
+  .recordar-contrasena {
+    left: 0px;
+    
+  }
+
+}
 

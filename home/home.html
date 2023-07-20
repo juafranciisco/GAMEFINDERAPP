@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleinicio.css">
+    <script src="changeviews.js"></script>
+    <script src="Api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="likeicon.js"></script>
+    <script src="searchgames.js"></script>
+  
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+
+    <title>INICIO</title>
+
+</head>
+
+
+<body>
+    
+
+  
+<div class="all">
+
+
+
+    <div class="container">
+
+      <div class="logo">
+      <img class="uplogo"  src="Joystick.png"  alt="palabra0">
+      <div class="game"> <img id="palabra1" src="GAME.png" alt="palabra1"> </div>
+      <div class="finder"> <img id="palabra2" src="ARCHIVE.png" alt="palabra2">  </div>
+      </div>
+
+  
+      <div class="search-bar">
+      <i class="fa fa-search"></i>
+      <input id="search-input" type="text" placeholder="Search Games...">
+      </div>
+
+    
+
+
+      <div class="logout">
+       <button>Log Out</button>
+      </div>
+
+      <div class="profile-picture">
+       <img src="/assets/15.jpg" alt="Foto de perfil" class="profile-image">
+      </div>
+   
+    </div>
+
+
+    <div class="toggle-container">
+      <span class="toggle-text">Dark Mode</span>
+      <button class="toggle-button" id="theme-toggle"></button>
+    </div>
+
+
+    <div class="titles"> 
+      <div  class="title1">
+      <h4> New and trending </h4>
+      </div>
+      <div class="title2"> 
+      <p> Based on player counts and release date</p>
+      </div>
+    </div>
+
+    <div class="views">
+      <img class="view1" src="/assets/ThumbnailsDisabled.png" alt="Image" style="cursor: pointer;">
+      <img class="view2" src="/assets/Active.png" alt="Image1" style="cursor: pointer;">
+    </div>
+
+
+
+    <div class="contenedor-options">
+  
+      <div class="Options"> 
+
+      <h10>Home</h10><br>
+      <h10>Reviews</h10><br>
+      <h10 id="new-releases-link">New Releases</h10><br><br><br>
+      <h13><i class="fas fa-star star-icon"></i>This week</h13><br>
+      <h13><i class="fas fa-calendar-alt calendar-icon"></i> This month</h13> <br>
+      <h13><span class="clock-icon"></span> Coming soon</h13><br><br>
+      <h10>Popular</h10><br>
+      <h13 id="latest-searches-link"><i class="fas fa-search search-icon"></i> Latest Searches</h13><br> 
+      <h13><i class="fas fa-thumbs-up thumb-icon"></i> Best of the Year</h13>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="card-list ">
+  
+  
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+      
+
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+    
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+    <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      <div class="card">
+        <img src="" alt="">
+        <div class="like-icon">&#x2764;</div>
+        <h3 id="title"></h3> 
+        <p id="release-date"></p>
+        <p id="genres"></p>
+      </div>
+
+      
+
+   
+  </div>
+
+    
+</div>
+
+
+ 
+</body>
+
+<script src="/home/changestylehome.js"></script> 
+  
+</html>

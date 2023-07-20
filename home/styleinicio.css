@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;900&display=swap');
+
+
+  body {
+  width:  100%;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  max-width: 1440px;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+.all{
+  position: absolute;
+  max-width: 1440px;
+  max-height: 1024px;
+  width: 100%;
+  height: 100%;
+  
+
+
+}
+
+
+  .views {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view1 {
+  margin-right: 25px; /* Ajusta la cantidad de margen entre view1 y view2 */
+}
+
+.view2 {
+  /* Si quieres que los elementos sean clickeables, puedes establecer un cursor */
+  cursor: pointer;
+}
+
+
+
+.single-column {
+  
+  left: 225px;
+  margin: 0 auto; /* Alinea al centro horizontalmente */
+  position: absolute; /* Se requiere para usar left y top */
+}
+
+
+.single-column .card {
+  flex-basis: 72%; /* Ocupa el 100% del ancho */
+  margin: 10px ; /* Alinea al centro horizontalmente */
+  height: 516px;
+  width: 100%;
+}
+
+.single-column .card img {
+  
+  width: 697px;
+  height: 315px;
+}
+
+
+
+
+
+
+
+
+
+.card-list {
+  display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; /* Ajusta la alineación a la izquierda */
+      margin-top: 100px;
+      margin-left: 250px;
+      
+  
+  
+}
+
+.card {
+  position: relative;
+  flex-basis: calc(33.33% - 10px);
+  background-color: #303030;
+  border-radius: 12px;
+  width: 363px;
+  height: 314px;
+  margin: 5px;
+  box-shadow: 0 0px 7px rgb(0 0 0 / 0.2);
+  
+}
+
+.card img {
+  position: relative;
+  border-radius: 12px;
+  width: 100%;  /* Ajustar el ancho de la imagen al 100% */
+  height: 179px;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+.card-content {
+  padding: 16px;
+}
+
+
+
+.card h3 {
+  font-family: 'Archivo', sans-serif;
+  position: relative;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.card p {
+  position: relative;
+  color: #939393;
+  font-size: 14px;
+  margin-left: 5px;
+  left: 16px;
+}
+
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  border-color: #FFFFFF;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.like-icon.clicked {
+  /* Estilos del ícono cuando está clicado */
+  color: red; /* Ejemplo: cambia el color a rojo */
+}
+
+
+
+
+
+
+
+
+
+h10 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  height: 20px;
+  width: 111px;
+  line-height: 21.76px;
+  cursor: pointer;
+}
+
+h10 > span {
+  color: white; /* Color de texto predeterminado para h10 */
+}
+
+
+
+h13 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  height: 20px;
+  width: 100px;
+  line-height: 19.58px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+h13 .clock-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #BF5FE1;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+h13 .calendar-icon {
+  color: #BF5FE1;
+  margin-right: 5px;
+}
+
+h13 .star-icon {
+  color: #BF5FE1;
+  margin-right: 5px;
+}
+
+h13 .search-icon {
+  color: #BF5FE1;
+  margin-right: 5px;
+}
+
+h13 .thumb-icon {
+  color: #BF5FE1;
+  margin-right: 5px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 79px;
+  background-color: #1B1B1B;
+  width: 100%;
+  max-width: 1440px; /* Aquí establece el ancho máximo deseado para .container */
+  margin: 0 auto; /* Esto centrará .container en la pantalla */
+
+  
+}
+
+.logo {
+  position: flex;
+  display: flex;
+  
+  
+}
+.finder {
+  position: absolute;
+  left: 70px;
+  top: 55px;
+}
+
+.uplogo {
+  position: relative;
+  top: 0px;
+}
+
+.game {
+  position: relative;
+  top: 10px;
+}
+
+
+
+
+.search-bar {
+
+  max-width: 500px; /* Ancho máximo ajustable según tus necesidades */
+  margin: 0 auto;
+  left: 539px;
+  top: 16px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+}
+
+.search-icon {
+  margin-right: 10px;
+  color: #BF5FE1;
+}
+
+
+
+.search-bar input {
+  
+  width: 362px;
+  height: 47px;
+  top: 16px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  
+}
+
+.logout button {
+ 
+  top: 15px;
+  width: 66px;
+  height: 39px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+
+.profile-picture {
+  width: 48px;
+  height: 48px;
+  border: 2px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+.titles{
+  position: relative;
+  top: 30px;
+  margin-left: 50px;
+  
+
+}
+
+
+.title1 {
+  font-family: 'Archivo', sans-serif;
+  width: 600px;
+  height: 52px;
+  line-height: 52.22px;
+  color: white;
+  font-size: 48px;
+
+}
+.title2 {
+  
+  width: 332px;
+  height: 20px;
+  color: #939393;
+}
+
+c{ 
+  position: relative;
+  color: #BF5FE1;
+  top: -20px;
+  left: 360px;
+}
+
+
+.contenedor-options {
+  position: relative;
+  
+}
+
+
+
+.Options {
+  
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  margin-left: 40px;
+ 
+}
+
+/* DARK MODE  */
+
+.toggle-container {
+  position: relative;
+  align-items: center;
+ 
+  gap: 8px;
+}
+
+.toggle-button {
+  position: relative;
+  left: 92%;
+  top:85px;
+  width: 53px;
+  height: 28px;
+  border-radius: 42px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.toggle-button::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.toggle-button.clicked {
+  background-color: #2196f3;
+}
+
+.toggle-button.clicked::after {
+  transform: translateX(26px);
+}
+
+.toggle-text {
+  font-family: "Exo";
+  position: relative;
+  top:90px;
+  left: 91%;
+  color: #fff;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
