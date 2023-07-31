@@ -1,21 +1,24 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 0px;
-    top: 0px;
-    background-image: url(BG@3x.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s;
-    
-  }
+  position: absolute;
+  max-width: 1440px;
+  max-height: 1024px;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-image: url(./assets/BG@3x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+ 
 
   body.dark-theme {
     background-image: url(/assets/unsplash_jCorhBYp_C4@3x.png);
@@ -66,7 +69,7 @@ body {
   }
 
   .toggle-text {
-    font-family: "Exo";
+    font-family: 'Exo', sans-serif;
     position: relative;
     top:90px;
     left: 85%;
@@ -116,7 +119,7 @@ body {
     left: 35%;
     top: 7.66%;
     bottom: 29.44%;
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
@@ -147,7 +150,7 @@ body {
   }
 
   .login-container {
-   
+  top: 150px;
   position: absolute;
   justify-content: center;
   text-align: center;
@@ -159,21 +162,23 @@ body {
   width: 462px;
   height: 702px;
   backdrop-filter: blur(5px);
-  left: 878px;
+  left: 900px;
   right: 100px
+  
 
 
 
   }
 
   .login-container h2 {
-    font-family: "Archivo";
+    font-family: 'Archivo', sans-serif;
     color: white;
   }
 
   .login-container h3 {
-    font-family: "Archivo";
+    font-family: 'Archivo', sans-serif;
     color: white;
+    font-size: 14px;
   }
 
 
@@ -194,7 +199,7 @@ body {
     Width: 400px;
     height:  30px;
     border-color: #BF5FE1;
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -233,7 +238,7 @@ body {
     height: 19px;
     left: 60.25%;
     top: 35%;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -251,22 +256,20 @@ body {
     margin: 30px;
     top: 35%;
     left: 15%;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     align-items: center;
     color: #FFFFFF;
-    font-family: 'Exo';
   }
 
   .link2 {  
     position: absolute;
     padding: 15px;
-    
-    right: 30%;
+    right: 25%;
     top: 410px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -279,10 +282,10 @@ body {
     display: block;
     left: 20px;
     width: 5%;
-    top: -35px;
-    color: black;
-    
-    border-color: black;
+    top: -50px;
+    border-style: groove;
+    background-color: transparent;
+    border-color: white;
     padding: 10px;
     border-radius: 7px;
     cursor: pointer;
@@ -314,11 +317,11 @@ body {
 
 
   h1 {
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
   }
 
   h2{
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
   }
 
   h7 {
@@ -327,7 +330,7 @@ body {
     left:  28.30%;
     top: 410px;
     padding: 15px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -343,9 +346,9 @@ body {
     position: absolute;
     padding: 15px;
     
-    right: 30%;
+    right: 25%;
     top: 410px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -353,15 +356,21 @@ body {
     text-align: right;
     color: #BF5FE1;
  }
+
+ .input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
  
  .error-message {
-    display: none;
-    text-align: left;
-    color: red;
-    font-size: 10px;
-    
-   
-  }
+  display: none;
+  text-align: left;
+  color: red;
+  font-size: 10px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
  
 
  .b1
@@ -387,7 +396,7 @@ body {
     right: 20.66%;
     top: 58.79%;
     bottom: 39.29%;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -463,7 +472,7 @@ body {
     left: 80%;
     position: absolute;
     top: 10%;
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38.1041px;
@@ -477,7 +486,7 @@ body {
         top: 50px;
         position: absolute;
         z-index: 9999;
-        font-family: 'Archivo';
+        font-family: 'Archivo', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15.6899px;
@@ -523,8 +532,8 @@ body {
     }
     
     b {
-        left: 53%;
-        top: 37.85%;
+        left: 50%;
+        top: 37.95%;
 
     
     }
@@ -564,8 +573,8 @@ body {
     }
 
     .link2{
-      top: 53.55%;
-      right: 90px;
+      top: 53.65%;
+      right: 70px;
     }
     .link1 {
      top: 38%;
@@ -586,7 +595,7 @@ body {
         left: 41.66%;
         right: 41.66%;
         bottom: 32.76%;
-        font-family: 'Open Sans';
+        font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -633,7 +642,7 @@ body {
       height: 10px;
       left: 5.62%;
       right: 5.31%;
-      font-family: "Archivo";
+      font-family: 'Archivo', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -645,7 +654,7 @@ body {
 
     h3{ 
       z-index: 9999;
-      font-family: "Archivo";
+      font-family: 'Archivo', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -656,7 +665,7 @@ body {
     }
 
     .titulos{
-      font-family: "Archivo";
+      font-family: 'Archivo', sans-serif;
       padding: 25px;
       align-items: center;
       text-align: center;
@@ -671,5 +680,58 @@ body {
     
   }
 
+
+
+.toggle-container {
+  position: relative;
+  align-items: center;
+  gap: 8px;
+  
 }
 
+.toggle-button {
+  position: relative;
+  left: 85%;
+  top: 130px;
+  width: 50px;
+  height: 24px;
+  border-radius: 42px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 0px;
+  outline: none;
+
+}
+
+.toggle-button::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.toggle-button.active {
+  background-color: #2196f3;
+}
+
+.toggle-button.active::after {
+  transform: translateX(26px);
+  
+}
+
+.toggle-text {
+  font-family: 'Exo', sans-serif;
+  position: relative;
+  top:90px;
+  left: 85%;
+  color: #fff;
+  font-size: 12px;
+}
+}

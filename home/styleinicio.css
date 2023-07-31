@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+
 
 
   body {
-  width:  100%;
+  max-width: 1440px;
+  max-height: 1024px;
   background-color: black;
   margin: 0px;
   padding: 0px;
-  max-width: 1440px;
   height: 100%;
 }
 
@@ -32,25 +34,33 @@
   .views {
     display: flex;
     justify-content: flex-end;
-}
+    }
+
+
 
 .view1 {
-  margin-right: 25px; /* Ajusta la cantidad de margen entre view1 y view2 */
-}
+  margin-right: 25px; 
+  }
 
-.view2 {
-  /* Si quieres que los elementos sean clickeables, puedes establecer un cursor */
-  cursor: pointer;
-}
+.view1:hover {
+  transform: scale(1.2); 
+  }
+
+
+
+.view2:hover {
+  transform: scale(1.2); 
+  }
 
 
 
 .single-column {
   
-  left: 225px;
+  left: 150px;
   margin: 0 auto; /* Alinea al centro horizontalmente */
   position: absolute; /* Se requiere para usar left y top */
-}
+  
+  }
 
 
 .single-column .card {
@@ -58,13 +68,24 @@
   margin: 10px ; /* Alinea al centro horizontalmente */
   height: 516px;
   width: 100%;
-}
+  }
 
 .single-column .card img {
   
-  width: 697px;
+  width: 100%;
   height: 315px;
-}
+  }
+
+.single-column .card p {
+  display: inline; /* Mostrar los párrafos en línea (en una fila) */
+   /* Ajusta el espacio entre los párrafos */
+  top: 20px;
+  margin-left: 6px;
+
+
+  }
+
+
 
 
 
@@ -83,9 +104,9 @@
       
   
   
-}
+  }
 
-.card {
+  .card {
   position: relative;
   flex-basis: calc(33.33% - 10px);
   background-color: #303030;
@@ -94,6 +115,8 @@
   height: 314px;
   margin: 5px;
   box-shadow: 0 0px 7px rgb(0 0 0 / 0.2);
+  text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto desborda */
+  overflow: hidden; /* Ocultar cualquier contenido que desborde de la tarjeta */
   
 }
 
@@ -119,16 +142,17 @@
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 0px;
-  left: 20px;
+  left: 10px;
   cursor: pointer;
 }
 
 .card p {
+  font-family: 'Archivo', sans-serif;
   position: relative;
   color: #939393;
   font-size: 14px;
   margin-left: 5px;
-  left: 16px;
+  left: 5px;
 }
 
 
@@ -140,15 +164,24 @@
   color: white;
   border-color: #FFFFFF;
   cursor: pointer;
-  z-index: 2;
+  z-index: 999;
 }
 
 .like-icon.clicked {
-  /* Estilos del ícono cuando está clicado */
-  color: red; /* Ejemplo: cambia el color a rojo */
+ 
+  color: red; 
 }
 
 
+h11 {
+  font-family: 'Exo', sans-serif;
+  color: #BF5FE1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: -20px;
+  size: 18px  ;
+}
 
 
 
@@ -220,7 +253,6 @@ h13 .thumb-icon {
   height: 79px;
   background-color: #1B1B1B;
   width: 100%;
-  max-width: 1440px; /* Aquí establece el ancho máximo deseado para .container */
   margin: 0 auto; /* Esto centrará .container en la pantalla */
 
   
@@ -292,6 +324,7 @@ h13 .thumb-icon {
   color: white;
   border: none;
   cursor: pointer;
+  font-family: 'Archivo', sans-serif;
  
 }
 
@@ -316,8 +349,9 @@ h13 .thumb-icon {
 
 
 .titles{
+  font-family: 'Archivo', sans-serif;
   position: relative;
-  top: 30px;
+  top: 10px;
   margin-left: 50px;
   
 
@@ -334,7 +368,7 @@ h13 .thumb-icon {
 
 }
 .title2 {
-  
+  font-family: 'Archivo', sans-serif;
   width: 332px;
   height: 20px;
   color: #939393;
@@ -362,7 +396,7 @@ c{
   flex-direction: column;
   position: absolute;
   top: 100px;
-  margin-left: 40px;
+  margin-left: 46px;
  
 }
 
@@ -371,20 +405,20 @@ c{
 .toggle-container {
   position: relative;
   align-items: center;
- 
   gap: 8px;
 }
 
 .toggle-button {
   position: relative;
-  left: 92%;
-  top:85px;
+  left: 91%;
+  top:110px;
   width: 53px;
   height: 28px;
   border-radius: 42px;
   background-color: #ccc;
   transition: background-color 0.3s;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .toggle-button::after {
@@ -409,12 +443,110 @@ c{
 }
 
 .toggle-text {
-  font-family: "Exo";
+  font-family: 'Exo', sans-serif;
   position: relative;
-  top:90px;
+  top:115px;
   left: 91%;
   color: #fff;
   font-size: 12px;
+}
+
+
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
+/* Estilos CSS para la nueva vista */
+.new-view {
+  width: 1076px;
+  height: 793px;
+  top: 111px;
+  left: 182px;
+  border-radius: 24px;
+  position: absolute;
+  background-color: #FAFAFA;
+  z-index: 9999; /* Coloca la nueva vista por encima de todo */
+  background-image: linear-gradient( #D4D4D4 0%, #FAFAFA 83%, #FAFAFA 100%);
+  background-position: center;
+}
+
+.new-view img {
+  max-height: 0%; /* Ajusta el tamaño vertical de la imagen */
+  max-width: 0%; /* Ajusta el tamaño horizontal de la imagen */
+  margin: auto; /* Centra la imagen verticalmente */
+  display: block;
+  border-radius: 24px; /* Ajusta el radio de borde para tener esquinas redondeadas */
+}
+
+
+
+/* Estilos CSS para el texto del título en la nueva vista */
+.new-view h1 { 
+  color: #FFFFFF;
+  position: relative;
+  top: 150px;
+  left: 50px ;
+  
+  font-family: 'Archivo', sans-serif;
+  text-align:left;
+  margin-top: 20px;
+}
+
+
+.button2 {
+
+
+  position: relative;
+  left: 50px;
+  top: 40%;
+  border-style: groove;
+  color: #BF5FE1;
+  padding: 10px 20px;
+  width: 228px;
+  height: 47px;
+  border: 4px solid #BF5FE1; /* Establece el borde de color #BF5FE1 con 2px de grosor */
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent; /* Hace que el fondo del botón sea transparente */
+}
+
+.button1 {
+  position: relative;
+  left: 50px;
+  top: 40%;
+  background-color: #BF5FE1; /* Cambia este color al que desees */
+  color: #fff; /* Cambia este color al que desees */
+  padding: 10px 20px;
+  
+  width: 228px  ;
+  height: 47px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.text { 
+font-family: 'Archivo', sans-serif;
+position: absolute;
+top: 35%;
+left: 20%;
+}
+.text1 {
+font-family: 'Archivo', sans-serif;
+position: absolute;
+top: 70%;
+left: 70%;
+}
+
+.menu {
+  display: none;
 }
 
 
@@ -426,3 +558,528 @@ c{
 
 
 
+
+
+
+
+
+
+
+@media (max-width: 320px)   {
+
+
+
+
+
+
+
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+  }
+  
+  
+  
+  .card-list {
+    display: block;
+    
+    max-width: 100%; /* Modificar este valor si deseas ajustar el ancho máximo */
+    margin: 0 auto; /* Alinea al centro horizontalmente */
+    padding: 0 10px; /* Agrega un poco de espacio a los lados para que se vea mejor */
+  }
+  
+  
+  
+  
+  .all{
+    position: absolute;
+    max-width: 1440px;
+    max-height: 1024px;
+    width: 100%;
+    height: 100%;
+    
+  
+  
+  }
+  
+  
+
+  
+  
+  
+  .single-column {
+    
+    left: 50%;
+    margin: 0 auto; /* Alinea al centro horizontalmente */
+    position: relative; /* Se requiere para usar left y top */
+    
+  }
+  
+  
+  .single-column .card {
+    flex-basis: 100%; /* Ocupa el 100% del ancho */
+    margin: 10px ; /* Alinea al centro horizontalmente */
+    height: 332px;
+    width: 288px;
+  }
+  
+  .single-column .card img {
+    
+    width: 100%;
+    height: 179px;
+  }
+  
+  .single-column .card p {
+    display: inline; /* Mostrar los párrafos en línea (en una fila) */
+     /* Ajusta el espacio entre los párrafos */
+    top: 20px;
+    margin-left: 6px;
+  
+  
+  }
+  
+  
+  
+  
+
+  
+ 
+  
+  .card {
+    top: 50px;
+    position: relative;
+    flex-basis: calc(33.33% - 10px);
+    background-color: #303030;
+    border-radius: 12px;
+    left: 160px;
+    margin: 10px;
+    box-shadow: 0 0px 7px rgb(0 0 0 / 0.2);
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto desborda */
+    overflow: hidden; /* Ocultar cualquier contenido que desborde de la tarjeta */
+    
+  }
+  
+  .card img {
+    position: relative;
+    border-radius: 12px;
+    width: 100%;  /* Ajustar el ancho de la imagen al 100% */
+    height: 179px;
+    object-fit: cover;
+    z-index: 1;
+  
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  
+  
+  .card h3 {
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    left: 10px;
+    cursor: pointer;
+  }
+  
+  .card p {
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    color: #939393;
+    font-size: 14px;
+    margin-left: 5px;
+    left: 5px;
+  }
+  
+  
+  .like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    border-color: #FFFFFF;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .like-icon.clicked {
+   
+    color: red; 
+  }
+  
+  
+  h11 {
+    font-family: 'Exo', sans-serif;
+    color: #BF5FE1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: -20px;
+    size: 18px  ;
+  }
+  
+  
+  
+  
+  
+  
+  
+  h10 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    height: 20px;
+    width: 111px;
+    line-height: 21.76px;
+    cursor: pointer;
+  }
+  
+  h10 > span {
+    color: white; /* Color de texto predeterminado para h10 */
+  }
+  
+  
+  
+  h13 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    height: 20px;
+    width: 100px;
+    line-height: 19.58px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  h13 .clock-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #BF5FE1;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  h13 .calendar-icon {
+    color: #BF5FE1;
+    margin-right: 5px;
+  }
+  
+  h13 .star-icon {
+    color: #BF5FE1;
+    margin-right: 5px;
+  }
+  
+  h13 .search-icon {
+    color: #BF5FE1;
+    margin-right: 5px;
+  }
+  
+  h13 .thumb-icon {
+    color: #BF5FE1;
+    margin-right: 5px;
+  }
+  
+  
+  
+  .container {
+    position: relative;
+    width: 720px;
+
+    height: 79px;
+    background-color: #1B1B1B;
+    
+    
+    
+  }
+  
+  .logo {
+    
+    position: absolute;
+    left: 33%;
+    
+    
+  }
+  .finder {
+    position: absolute;
+    left: 60px;
+    top: 55px;
+  }
+  
+  .uplogo {
+    position: relative;
+    top: 0px;
+  }
+  
+  .game {
+    position: relative;
+    top: 10px;
+  }
+  
+  
+  
+  
+  .search-bar {
+    position: absolute;
+    left: 49%;
+    top: 120px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transform: translateX(-50%);
+  }
+  
+  .search-icon {
+    margin-right: 10px;
+    color: #BF5FE1;
+  }
+  
+  .fa-search:before {
+    display: none;
+}
+  
+  .search-bar input {
+    
+    width: 362px;
+    height: 47px;
+    top: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  
+    
+  }
+  
+  .logout button {
+    display: none;
+    top: 15px;
+    width: 66px;
+    height: 39px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Archivo', sans-serif;
+   
+  }
+  
+  
+  .profile-picture {
+    width: 48px;
+    height: 48px;
+    border: 2px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  
+  .titles{
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    top: 10px;
+    left:32%;
+    
+    
+  
+  }
+  
+  
+  .title1 {
+    font-family: 'Archivo', sans-serif;
+    width: 600px;
+    height: 52px;
+    line-height: 52.22px;
+    color: white;
+    font-size: 48px;
+  
+  }
+  .title2 {
+    font-family: 'Archivo', sans-serif;
+    width: 332px;
+    height: 20px;
+    color: #939393;
+  }
+  
+  c{ 
+    position: relative;
+    color: #BF5FE1;
+    top: -20px;
+    left: 360px;
+  }
+  
+  
+  .contenedor-options {
+    position: relative;
+    display: none;
+    
+  }
+  
+  .view2{
+    display: none;
+  }
+  
+  .view1 {
+    display: none ;
+  }
+  
+  .Options {
+    
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    margin-left: 46px;
+   
+  }
+  
+  /* DARK MODE  */
+  
+  .toggle-container {
+    position: relative;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .toggle-button {
+    position: relative;
+    left: 145%;
+    top:170px;
+    width: 53px;
+    height: 28px;
+    border-radius: 42px;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .toggle-button::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .toggle-button.clicked {
+    background-color: #2196f3;
+  }
+  
+  .toggle-button.clicked::after {
+    transform: translateX(26px);
+  }
+  
+  .toggle-text {
+    font-family: 'Exo', sans-serif;
+    position: relative;
+    top:175px;
+    left: 145%;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  
+  
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+  }
+  
+  /* Estilos CSS para la nueva vista */
+  .new-view {
+    width: 100%;
+    height: 100%;
+    top: 111px;
+    left: 182px;
+    border-radius: 24px;
+    position: absolute;
+    background-color: #FAFAFA;
+    z-index: 9999; /* Coloca la nueva vista por encima de todo */
+    background-image: linear-gradient( #D4D4D4 0%, #FAFAFA 83%, #FAFAFA 100%);
+    background-position: center;
+  }
+  
+  .new-view img {
+    max-height: 100%; /* Ajusta el tamaño vertical de la imagen */
+    max-width: 100%; /* Ajusta el tamaño horizontal de la imagen */
+    margin: auto; /* Centra la imagen verticalmente */
+    display: block;
+    border-radius: 24px; /* Ajusta el radio de borde para tener esquinas redondeadas */
+  }
+  
+  
+  
+  /* Estilos CSS para el texto del título en la nueva vista */
+  .new-view h1 { 
+    color: #FFFFFF;
+    position: relative;
+    top: 10px;
+    left: 10px ;
+    
+    font-family: 'Archivo', sans-serif;
+    text-align:left;
+    margin-top: 20px;
+  }
+  
+  
+  .button2 {
+  
+  
+    position: relative;
+    left: 50px;
+    top: 25%;
+    border-style: groove;
+    color: #BF5FE1;
+    padding: 10px 20px;
+    width: 228px;
+    height: 47px;
+    border: 4px solid #BF5FE1; /* Establece el borde de color #BF5FE1 con 2px de grosor */
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent; /* Hace que el fondo del botón sea transparente */
+  }
+  
+  .button1 {
+    position: relative;
+    left: 40px;
+    top: 25%;
+    background-color: #BF5FE1; /* Cambia este color al que desees */
+    color: #fff; /* Cambia este color al que desees */
+    padding: 10px;
+    margin: 10px;
+    width: 228px  ;
+    height: 47px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+}

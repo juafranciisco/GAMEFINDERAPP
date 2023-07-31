@@ -8,6 +8,7 @@ const toggletext = document.querySelector('.toggle-text');
 const title2 = document.querySelector ('.title2');
 const cardList = document.querySelector('.card-list');
 const container = document.querySelector('.container');
+const palabra2 = document.getElementById('palabra2');
 
 
 
@@ -23,6 +24,16 @@ themeToggle.addEventListener('click', function () {
   toggletext.style.color = isDarkMode ? '#1B1B1B' : '';
   title2.style.color = isDarkMode ? '#1B1B1B' : '';
   container.style.backgroundColor = isDarkMode ? '#EAEAEA' : '';
+
+
+    // Cambiar la imagen de palabra2 según el modo
+    if (isDarkMode) {
+      palabra2.src = '/assets/ARCHIVEdark.png'; 
+    } else {
+      palabra2.src = '/assets/ARCHIVE.png'; 
+    }
+
+
 
 
   const cards = cardList.querySelectorAll('.card');

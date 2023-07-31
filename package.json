@@ -1,0 +1,17 @@
+{
+  "name": "game-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "changestyle.js",
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "json-server-auth": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json:server": "json-server --watch db.json",
+    "json:server-auth": "json-server-auth --watch db.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
